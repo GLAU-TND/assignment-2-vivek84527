@@ -56,7 +56,38 @@ public class MyBinarySearchTree {
         System.out.println("the number of node doesn't have left child is-"+c);
 
     }
+    // Traverse(pre - order)
+    public void traversePreOrder(TreeNode node){
+        if(node!=null){
+            System.out.print(node.getData() + ", ");
+            traversePreOrder(node.getLeft());
+            traversePreOrder(node.getRight());
+        }
+    }
+
+    // Traverse(in - order)         (increasing sequence)
+
+    public void traverseInOrder(TreeNode node){
+        if(node!=null){
+            traverseInOrder(node.getLeft());
+            System.out.print(node.getData()+", ");
+            traverseInOrder(node.getRight());
+        }
+
+    }
+
+    // Traverse(post - order)
+
+    public void traversePostOrder(TreeNode node){
+        if(node!=null){
+
+            traversePostOrder(node.getLeft());
+            traversePostOrder(node.getRight());
+            System.out.print(node.getData()+" ,");
+        }
 
 
+    }
 
 }
+
