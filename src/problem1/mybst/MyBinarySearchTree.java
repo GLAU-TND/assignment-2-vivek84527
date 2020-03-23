@@ -40,7 +40,7 @@ public class MyBinarySearchTree {
 
 
     }
-    public static void traverse(TreeNode node)
+    public void traverse(TreeNode node)
     {
         int c=0;
         if (node == null)
