@@ -40,5 +40,23 @@ public class MyBinarySearchTree {
 
 
     }
+    public static void traverse(TreeNode node)
+    {
+        int c=0;
+        if (node == null)
+        { return;
+        }
+        if (node.getLeft() == null && node.getRight() == null)
+        { System.out.printf("%d ", node.getData());
+        }
+        traverse(node.getLeft());
+        if(node.getLeft()==null){
+            c++;
+        }
+        System.out.println("the number of node doesn't have left child is-"+c);
+
+    }
+
+
 
 }
