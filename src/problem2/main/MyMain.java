@@ -11,6 +11,9 @@ import problem1.mybst.MyBinarySearchTree;
 
 // use problem1.mybst.MyBinarySearchTree class for creating binary tree
 public class MyMain {
-    MyBinarySearchTree bst = new MyBinarySearchTree();
+    MyBinarySearchTree b = new MyBinarySearchTree();
+    b.insert(100);
+
+
 
 }
